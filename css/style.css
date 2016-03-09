@@ -112,7 +112,7 @@ footer{
 }
 
 .jumbotron{
-    background-image: url("/assets/images/jumbotron-main.png");
+    background-image: url("assets/images/jumbotron-main.png");
     background-position: center;
     background-size: cover;
     margin-bottom: 100px;
