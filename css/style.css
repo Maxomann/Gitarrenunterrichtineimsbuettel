@@ -15,7 +15,7 @@ body{
     padding-top: 51px;
     padding-bottom: 120px;
 
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 p {
     font-family: 'Open Sans', sans-serif;
@@ -34,13 +34,12 @@ footer p{
 }
 
 .jumbotron-index {
-    color: white;
 
-    background-image: url(../assets/images/entspannteAtmosphaere.png);
+    /*background-image: url(../assets/images/entspannteAtmosphaere.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: center;*/
 }
 .jumbotron-index .color {
     line-height: normal;
