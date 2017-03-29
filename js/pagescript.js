@@ -1,49 +1,25 @@
-$( document ).ready(function() {
-    initTelMailto();
+$(document).ready(function() {
+	$('.popup-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+		}
+	});
 
-    jQuery('#gallery_slideshow').camera({
-        fx: 'scrollHorz',
-        pagination: false,
-        mobileNavHover: false
-    });
-
-    resizeMainBanner();
-    window.onresize = resizeMainBanner;
+	$(document).ready(function() {
+		$('.pgwSlider').pgwSlider({
+			displayControls:true,
+			displayList:false,
+			adaptiveHeight:false,
+			verticalCentering:true
+		});
+	});
 });
-
-function initTelMailto(){
-    var tel = document.getElementsByClassName('tag_tel');
-    var mailto = document.getElementsByClassName('tag_mailto');
-
-    for(el in tel){
-        tel[el].innerHTML = '<a href="tel:+4940405245">040 / 405245</a>';
-    }
-    for(el in mailto){
-        mailto[el].innerHTML = '<a href="mailto:info@gitarrenunterrichtineimsbuettel.de">info@gitarrenunterrichtineimsbuettel.de</a>';
-    }
-}
-
-function resizeMainBanner(){
-    var jumbotron = document.getElementById('jumbotron-main');
-
-    if(jumbotron!==undefined){
-        //Jumbotron
-        var bodyStyle = window.getComputedStyle(document.body);
-
-        var body_padding_top = parseInt(bodyStyle.getPropertyValue('padding-top'));
-        var window_height = window.innerHeight;
-
-        var calculatedSize = window_height-body_padding_top;
-
-
-        //Jumbotron Inner
-        var jumbotron_inner = document.getElementById('jumbotron-main-inner');
-        var jumbotron_inner_height = $('#jumbotron-main-inner').height();
-        var calculatedMargin = (calculatedSize/2)-(jumbotron_inner_height);
-
-
-        //Apply
-        jumbotron.style.height = calculatedSize.toString()+"px";
-        jumbotron_inner.style.marginTop = calculatedMargin.toString()+"px";
-    }
-}

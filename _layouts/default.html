@@ -14,28 +14,18 @@
     <link rel="shortcut icon" href="assets/icon.ico" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/camera.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha256-PZLhE6wwMbg4AB3d35ZdBF9HD/dI/y4RazA3iRDurss=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/pgwslider.min.css" />
 
-    <link rel="stylesheet" href="fonts/amadeus/style.css">
-    <link rel="stylesheet" href="fonts/sourcesans/stylesheet.css">
-    <link rel="stylesheet" href="fonts/cabin/stylesheet.css">
-    <link rel="stylesheet" href="fonts/dejavuserif/stylesheet.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oxygen:300,400,700|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,23 +45,14 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mehr Erfahren&nbsp;<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="location.html">Location</a></li>
-                            <li><a href="unterricht.html">Unterricht</a></li>
-                            <li><a href="technik.html">Technik</a></li>
-                            <li><a href="person.html">Zur Person</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="sounds.html">Hörprobe</a></li>
-                    <!--<li><a href="/person.html#">Zur Person</a></li>-->
-                    <li><a href="kosten.html#">Preise</a></li>
-                    <li><a href="kontakt.html#">Kontakt</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="unterricht.html">Unterricht</a></li>
+                    <li><a href="technik.html">Technik</a></li>
+                    <li><a href="kosten.html">Kosten</a></li>
+                    <li><a href="person.html">Zur Person</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="tag_tel"></li>
-                    <li class="tag_mailto"></li>
+                <ul class="nav navbar-nav navbar-right">       
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -81,29 +62,17 @@
     <article>
         {{ content }}
     </article>
-<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="impressum.html#">Impressum</a>
-                </div>
-                <div class="col-md-4">
-                    ©2015 Bernhard Welling
-                </div>
-                <div class="col-md-4">
-                    Made by: <a target="_blank" href="http://kay-gonschior.de">kay-gonschior.de</a>
-                </div>
-            </div>
+            <p>©2017 Bernhard Welling · <a href="impressum.html">Impressum</a> · <a href="kontakt.html">Kontakt</a></p>
         </div>
     </footer>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/pgwslider.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/pagescript.js"></script>
 
 </body>
