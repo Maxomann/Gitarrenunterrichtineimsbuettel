@@ -18,7 +18,7 @@ $(document).ready(function() {
 		$('.pgwSlider').pgwSlider({
 			displayControls:true,
 			displayList:false,
-			adaptiveHeight:true,
+			adaptiveHeight:false,
 			verticalCentering:true
 		});
 	});
