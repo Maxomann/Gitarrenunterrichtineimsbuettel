@@ -67,4 +67,6 @@ footer p{
     max-width: 100%;
 }
 
-.contact_align{ display:inline-block; width:44px; }
+.contact_align{
+    display:inline-block; width:44px;
+}
