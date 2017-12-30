@@ -13,13 +13,17 @@ $(document).ready(function() {
 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 		}
 	});
+});
 
-	$(document).ready(function() {
-		$('.pgwSlider').pgwSlider({
-			displayControls:true,
-			displayList:false,
-			adaptiveHeight:false,
-			verticalCentering:true
-		});
+$(document).ready(function() {
+	$('.pgwSlider').pgwSlider({
+		displayControls:true,
+		displayList:false,
+		adaptiveHeight:false,
+		verticalCentering:true
 	});
+});
+
+$(document).ready(function() {
+    $('.pgwSlideshow').pgwSlideshow();
 });
