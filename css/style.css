@@ -24,14 +24,19 @@ h3{
     font-family: 'cabinregular';
 }
 .jumbotron h1{
-    font-family: 'Amadeus';
+    font-family: 'cabinmedium';
     font-size: 70px;
 }
 .jumbotron h2{
     font-family: 'cabinmedium';
 }
+
+nav {
+    font-family: 'cabinregular';
+}
+
 .navbar-brand{
-    font-family: 'Amadeus';
+    font-family: 'cabinmedium';
 }
 
 .navbar-brand{

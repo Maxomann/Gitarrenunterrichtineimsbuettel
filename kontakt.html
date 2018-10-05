@@ -8,7 +8,7 @@ robot_tags:
 <div id="jumbotron-kontakt" class="jumbotron">
   <div class="container">
       <h1>Kontakt</h1>
-      <h2>Vereinbaren Sie einen Kennenlern-Termin</h2>
+      <!--<h2>Vereinbaren Sie einen Kennenlern-Termin</h2>-->
   </div>
 </div>
 
@@ -99,9 +99,13 @@ robot_tags:
     <br>
     <br>
     <br>
-
+    
     <img class="previewIcon" alt="contact" src="assets/images/kontakt_map.svg">
     <h3>Maps</h3>
     <hr>
-    <iframe style="max-width:100%" src="https://www.google.com/maps/d/embed?mid=zosNg-q9Mdes.kaM3V7wAhJuw" width="640" height="480"></iframe>
+    <div style='overflow:hidden;height:476px;width:636px;max-height:100%;max-width:100%;margin: auto;'>
+      <div id='gmapsElement' style='height:100%;width:100%;'></div>
+      <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+    </div>
+    
 </div>
