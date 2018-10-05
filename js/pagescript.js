@@ -47,3 +47,20 @@ function resizeMainBanner(){
         jumbotron_inner.style.marginTop = calculatedMargin.toString()+"px";
     }
 }
+
+function initGmaps() {
+    var myOptions = {
+        zoom:17,center:new google.maps.LatLng(53.57642999999999,9.946459900000036),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+        
+    map = new google.maps.Map(document.getElementById('gmapsElement'), myOptions);
+    
+    marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(53.57642999999999,9.946459900000036)});
+    
+    infowindow = new google.maps.InfoWindow({content:'<strong>Bernhard Welling</strong><br>Sillemstrasse 40<br>20257 Hamburg<br>'});
+    
+    google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+    
+    infowindow.open(map,marker);
+}

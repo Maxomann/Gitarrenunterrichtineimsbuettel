@@ -27,15 +27,6 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,33 +46,31 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="dropdown">
+                    <!--<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mehr Erfahren&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="location.html">Location</a></li>
-                            <li><a href="unterricht.html">Unterricht</a></li>
-                            <li><a href="technik.html">Technik</a></li>
-                            <li><a href="person.html">Zur Person</a></li>
                         </ul>
-                    </li>
+                    </li>-->
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="unterricht.html">Unterricht</a></li>
+                    <li><a href="technik.html">Technik</a></li>
+                    <li><a href="person.html">Zur Person</a></li>
                     <li><a href="sounds.html">Hörprobe</a></li>
                     <!--<li><a href="/person.html#">Zur Person</a></li>-->
-                    <li><a href="kosten.html#">Preise</a></li>
+                    <li><a href="kosten.html#">Kosten</a></li>
                     <li><a href="kontakt.html#">Kontakt</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <!--<ul class="nav navbar-nav navbar-right">
                     <li class="tag_tel"></li>
                     <li class="tag_mailto"></li>
-                </ul>
+                </ul>-->
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
-
     <article>
         {{ content }}
     </article>
-<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
     <footer>
         <div class="container">
@@ -90,7 +79,7 @@
                     <a href="impressum.html#">Impressum</a>
                 </div>
                 <div class="col-md-4">
-                    ©2015 Bernhard Welling
+                    ©2018 Bernhard Welling
                 </div>
                 <div class="col-md-4">
                     Made by: <a target="_blank" href="http://kay-gonschior.de">kay-gonschior.de</a>
@@ -105,6 +94,10 @@
     <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
     <script type="text/javascript" src="js/camera.js"></script>
     <script type="text/javascript" src="js/pagescript.js"></script>
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtdfhtI8oyRJ0is9Ws_gRL9RWNyd3WbrI&callback=initGmaps">
+    </script>
 
 </body>
 </html>
