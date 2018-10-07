@@ -67,6 +67,20 @@ footer{
     margin-top: 50px;
 }
 
+.lebenslauf {
+    font-size: 1.2em;
+    
+}
+.lebenslauf table tr td:nth-child(1){
+    white-space:nowrap;
+    vertical-align: top;
+}
+
+.lebenslauf-list {
+    list-style: none;
+    padding-left: 0;
+}
+
 .fb-like{
     margin-top: 20px;
 }
