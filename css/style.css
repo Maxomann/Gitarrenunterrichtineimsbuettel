@@ -12,31 +12,38 @@ body{
 
     text-align: center;
 
-    font-family: 'dejavu_serifbook';
+    font-family: 'Roboto Slab', serif;
 }
 h1{
-    font-family: 'cabinmedium';
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
 }
 h2{
-    font-family: 'cabinregular';
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
 }
 h3{
-    font-family: 'cabinregular';
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
 }
 .jumbotron h1{
-    font-family: 'cabinmedium';
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
     font-size: 70px;
 }
 .jumbotron h2{
-    font-family: 'cabinmedium';
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
 }
 
 nav {
-    font-family: 'cabinregular';
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
 }
 
 .navbar-brand{
-    font-family: 'cabinmedium';
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
 }
 
 .navbar-brand{
@@ -103,8 +110,8 @@ footer{
 }
 
 .line-splitter{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .full_width{
@@ -122,7 +129,6 @@ footer{
     background-size: cover;
     margin-bottom: 100px;
     color: white;
-
 }
 
 .link_image{
