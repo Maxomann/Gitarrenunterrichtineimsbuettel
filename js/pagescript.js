@@ -53,9 +53,13 @@ function initGmaps() {
         zoom:17,center:new google.maps.LatLng(53.57642999999999,9.946459900000036),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-        
-    map = new google.maps.Map(document.getElementById('gmapsElement'), myOptions);
     
+    mapElement = document.getElementById('gmapsElement');
+    if(!mapElement)
+        return;
+
+    map = new google.maps.Map(mapElement, myOptions);
+
     marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(53.57642999999999,9.946459900000036)});
     
     infowindow = new google.maps.InfoWindow({content:'<strong>Bernhard Welling</strong><br>Sillemstrasse 40<br>20257 Hamburg<br>'});
