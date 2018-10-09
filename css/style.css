@@ -50,17 +50,6 @@ nav {
     color: black;
 }
 
-@media (min-width: 768px){
-    body{
-        padding-top: 100px;
-    }
-}
-@media (min-width: 991px){
-    body{
-        padding-top: 50px;
-    }
-}
-
 footer{
     background-color: #eee;
     padding: 20px 0px 20px 0px;
