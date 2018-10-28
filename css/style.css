@@ -56,10 +56,6 @@ footer{
     margin-top: 50px;
 }
 
-.lebenslauf {
-    font-size: 1.2em;
-    
-}
 .lebenslauf table tr td:nth-child(1){
     white-space:nowrap;
     vertical-align: top;
@@ -170,7 +166,7 @@ footer{
 }
 @media (min-width: 768px){
     footer div{
-        max-width: 700px;
+        max-width: 800px;
     }
 }
 
@@ -181,4 +177,15 @@ footer{
 .red_star{
     display: inline;
     color: red;
+}
+
+.small-image-row>div>img {
+    width: 262px;
+    max-width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.small-image-row>div>p {
+    margin-top: 8px;
 }
