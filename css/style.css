@@ -189,3 +189,16 @@ footer{
 .small-image-row>div>p {
     margin-top: 8px;
 }
+
+.margin-top-elements-in-row > *{
+    margin-top: 40px;
+}
+.margin-top-elements-in-row > *:nth-child(1){
+    margin-top: 0px;
+}
+
+@media (min-width: 992px) {
+    .margin-top-elements-in-row > *{
+        margin-top: inherit;
+    }
+}

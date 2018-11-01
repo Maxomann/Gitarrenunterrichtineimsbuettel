@@ -1,14 +1,14 @@
 $( document ).ready(function() {
     initTelMailto();
 
+    resizeMainBanner();
+    window.onresize = resizeMainBanner;
+
     jQuery('#gallery_slideshow').camera({
         fx: 'scrollHorz',
         pagination: false,
         mobileNavHover: false
     });
-
-    resizeMainBanner();
-    window.onresize = resizeMainBanner;
 });
 
 function initTelMailto(){
@@ -26,7 +26,7 @@ function initTelMailto(){
 function resizeMainBanner(){
     var jumbotron = document.getElementById('jumbotron-main');
 
-    if(jumbotron!==undefined){
+    if(jumbotron){
         //Jumbotron
         var bodyStyle = window.getComputedStyle(document.body);
 
