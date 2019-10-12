@@ -10,7 +10,7 @@ complementary2: #db4802
 body{
     padding-top: 50px;
 
-    text-align: center;
+    text-align: left;
 
     font-family: 'Roboto Slab', serif;
 }
@@ -25,15 +25,6 @@ h2{
 h3{
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
-}
-.jumbotron h1{
-    font-family: 'Cabin', sans-serif;
-    font-weight: 500;
-    font-size: 70px;
-}
-.jumbotron h2{
-    font-family: 'Cabin', sans-serif;
-    font-weight: 500;
 }
 
 nav {
@@ -51,7 +42,7 @@ nav {
 }
 
 footer{
-    background-color: #eee;
+    background-color: #ffffff;
     padding: 20px 0px 20px 0px;
     margin-top: 50px;
 }
@@ -122,12 +113,44 @@ footer{
   width: 100%;
 }
 
+.icon-row-container {
+    text-align: center;
+}
+
+.kontakt-container {
+    text-align: center;
+}
+
 .jumbotron{
-    background-image: url("../assets/images/jumbotron-main.png");
+    background-image: url("../assets/images/location/3.png");
     background-position: center;
     background-size: cover;
     margin-bottom: 100px;
     color: white;
+
+    text-shadow: 0px 0px 8px black;
+
+    text-align: center;
+    /*background-color: rgba(219, 205, 0, 1);
+    background-blend-mode: hard-light;*/
+}
+.jumbotron h1{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    /*background-color: rgba(219, 205, 0, 0.9);*/
+}
+.jumbotron h2{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+}
+#jumbotron-main-inner {
+    text-align: left;
+    /*background-color: rgba(219, 205, 0, 0.9);*/
+}
+#jumbotron-main-inner h1{
+    text-align: left;
+    background-color: rgba(0,0,0,0);
 }
 
 .link_image{
@@ -147,7 +170,9 @@ footer{
 }
 
 .profilimage{
-    border: 5px solid #7FBDDB;
+    /*border: 5px solid #7FBDDB;*/
+    max-width: 220px;
+    width: 100%;
 }
 
 #banner-home{
@@ -161,7 +186,7 @@ footer{
         font-size: 40px;
     }
     #banner-home p{
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 @media (min-width: 768px){
@@ -201,4 +226,24 @@ footer{
     .margin-top-elements-in-row > *{
         margin-top: inherit;
     }
+}
+
+.center-text {
+    text-align: center;
+}
+
+.my-gallery {
+    width: 100%;
+}
+
+.my-gallery figure{
+    width: 25%;
+
+    float: left;
+
+    margin-bottom: 20px;
+}
+
+.my-gallery img {
+    max-width: 90%;
 }
