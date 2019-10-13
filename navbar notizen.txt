@@ -1,0 +1,33 @@
+STATE ON MAIN JUMBOTRON:
+
+.navbar-default {
+	background-color: transparent;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+.navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-toggle {
+	color: white;
+}
+
+---------------------------------------------------------------
+
+STATE ON PAGE:
+
+.navbar-default {
+	background-color: white;
+}
+
+.navbar-brand {
+	color: #333333;
+}
+
+.navbar-nav > li > a {
+	color: #333333;
+}

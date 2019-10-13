@@ -147,13 +147,20 @@ footer{
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
 }
-#jumbotron-main {
-    /*background-image: linear-gradient(
-        rgba(0, 128, 148, 0.5),
-        rgba(0, 128, 148, 0.5)
-      ),url("../assets/images/location/3.png");
+#jumbotron-main-inner {
+    transform: translateY(80px);
+}
+@media (min-width: 768px){
+    #jumbotron-main-inner {
+        /*background-image: linear-gradient(
+            rgba(0, 128, 148, 0.5),
+            rgba(0, 128, 148, 0.5)
+        ),url("../assets/images/location/3.png");
 
-      color: white;*/
+        color: white;*/
+
+        transform: translateY(0);
+    }
 }
 #jumbotron-main-inner {
     text-align: left;
