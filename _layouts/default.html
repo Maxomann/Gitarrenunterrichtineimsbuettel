@@ -56,13 +56,11 @@
                         <ul class="dropdown-menu">
                         </ul>
                     </li>-->
-                    <li><a href="location.html">Location</a></li>
-                    <li><a href="gitarrenunterricht.html">Gitarrenunterricht</a></li>
-                    <li><a href="technik.html">Technik</a></li>
-                    <li><a href="person.html">Zur Person</a></li>
-                    <!--<li><a href="sounds.html">Hörprobe</a></li>-->
-                    <li><a href="kosten.html#">Kosten</a></li>
-                    <li><a href="kontakt.html#">Kontakt</a></li>
+                    {% for hash in site.data.pages %}
+                        {% assign pageentry = hash[1] %}
+                        
+                        <li><a href="#{{hash[0]}}">{{pageentry.title}}</a></li>
+                    {% endfor %}
                 </ul>
                 <!--<ul class="nav navbar-nav navbar-right">
                     <li class="tag_tel"></li>
@@ -82,10 +80,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <a href="impressum.html#">Impressum & Datenschutzerklärung</a>
+                    <a href="impressum.html">Impressum & Datenschutzerklärung</a>
                 </div>
                 <div class="col-md-4">
-                    ©2018 Bernhard Welling
+                    ©2019 Bernhard Welling
                 </div>
                 <div class="col-md-4">
                     Made by: <a target="_blank" href="http://kay-gonschior.de">kay-gonschior.de</a>

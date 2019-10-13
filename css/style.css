@@ -247,3 +247,10 @@ footer{
 .my-gallery img {
     max-width: 90%;
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -51px;
+    visibility: hidden;
+}

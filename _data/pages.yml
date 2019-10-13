@@ -1,0 +1,42 @@
+location:
+  layout: default
+  title: Location
+  content_description:
+  robot_tags:
+  file: location.html
+
+gitarrenunterricht:
+  layout: default
+  title: Gitarrenunterricht
+  content_description:
+  robot_tags:
+  technik:
+  file: gitarrenunterricht.html
+
+technik:
+  layout: default
+  title: Technik
+  content_description:
+  robot_tags:
+  file: technik.html
+
+person:
+  layout: default
+  title: Zur Person
+  content_description:
+  robot_tags:
+  file: person.html
+
+kosten:
+  layout: default
+  title: Kosten
+  content_description:
+  robot_tags:
+  file: kosten.html
+
+kontakt:
+  layout: default
+  title: Kontakt
+  content_description:
+  robot_tags:
+  file: kontakt.html
