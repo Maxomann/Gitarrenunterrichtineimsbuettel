@@ -13,6 +13,8 @@ body{
     text-align: left;
 
     font-family: 'Roboto Slab', serif;
+
+    overflow-x: hidden;
 }
 h1{
     font-family: 'Cabin', sans-serif;
@@ -140,8 +142,13 @@ footer{
 .jumbotron h1{
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
-    font-size: 70px;
+    font-size: 10vw;
     /*background-color: rgba(219, 205, 0, 0.9);*/
+}
+@media (min-width: 768px){
+    .jumbotron h1{
+        font-size: 70px;
+    }
 }
 .jumbotron h2{
     font-family: 'Cabin', sans-serif;
@@ -169,6 +176,8 @@ footer{
 #jumbotron-main-inner h1{
     text-align: left;
     background-color: rgba(0,0,0,0);
+
+    font-size: 75px;
 }
 
 .link_image{
@@ -254,15 +263,23 @@ footer{
     width: 100%;
 }
 
-.my-gallery figure{
-    width: 25%;
-
+.my-gallery>figure{
+    width: 50%;
     float: left;
-
-    margin-bottom: 20px;
+}
+@media (min-width: 768px){
+    .my-gallery>figure{
+        width: 25%;
+        float: left;
+    }
 }
 
 .my-gallery img {
+    max-width: 90%;
+    margin-bottom: 5px;
+}
+
+.my-gallery figcaption{
     max-width: 90%;
 }
 
