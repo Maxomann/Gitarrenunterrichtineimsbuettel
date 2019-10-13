@@ -265,11 +265,13 @@ footer{
 
 .my-gallery>figure{
     width: 50%;
-    float: left;
+    margin: auto;
+    float: none;
 }
 @media (min-width: 768px){
     .my-gallery>figure{
         width: 25%;
+        margin: auto;
         float: left;
     }
 }
@@ -281,6 +283,13 @@ footer{
 
 .my-gallery figcaption{
     max-width: 90%;
+    margin-bottom: 15px;
+}
+@media (min-width: 768px){
+    .my-gallery figcaption{
+        max-width: 90%;
+        margin-bottom: 0;
+    }
 }
 
 a.anchor {
