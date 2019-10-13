@@ -46,7 +46,7 @@ nav {
 footer{
     background-color: #ffffff;
     padding: 20px 0px 20px 0px;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
 }
 
 .lebenslauf table tr td:nth-child(1){
