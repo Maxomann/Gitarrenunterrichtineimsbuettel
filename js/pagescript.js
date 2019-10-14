@@ -3,12 +3,15 @@ $( document ).ready(function() {
 
     resizeMainBanner();
     window.onresize = resizeMainBanner;
+    
+    $('[data-toggle="popover"]').popover();
 
-    jQuery('#gallery_slideshow').camera({
+    /*jQuery('#gallery_slideshow').camera({
         fx: 'scrollHorz',
         pagination: false,
         mobileNavHover: false
-    });
+    });*/
+
 });
 
 function initTelMailto(){
