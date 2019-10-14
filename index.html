@@ -18,7 +18,7 @@ robot_tags:
 <div class="container">
     <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-3">
+        <div class="col-md-3 center-text">
             <img class="img-circle profilimage" src="assets/images/profil.jpg">
         </div>
         <div class="col-md-7">
@@ -32,6 +32,54 @@ robot_tags:
     </div>
 
     <hr class="line-splitter">
+
+    {% for hash in site.data.pages %}
+        {% assign pageentry = hash[1] %}
+        
+        <a id="{{hash[0]}}" class="anchor"></a>
+        {% include {{ pageentry.file }} %}
+        
+        <hr class="line-splitter">
+    {% endfor %}
+
+    <!-- <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="./assets/images/gallery_main/1.png" itemprop="contentUrl" data-size="1920x1080">
+                <img src="./assets/images/gallery_main/1.png" itemprop="thumbnail" alt="Image description" />
+            </a>
+        </figure>
+    
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="./assets/images/gallery_main/2.png" itemprop="contentUrl" data-size="1920x1080">
+                <img src="./assets/images/gallery_main/2.png" itemprop="thumbnail" alt="Image description" />
+            </a>
+        </figure>
+        
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="./assets/images/gallery_main/3.png" itemprop="contentUrl" data-size="1920x1080">
+                <img src="./assets/images/gallery_main/3.png" itemprop="thumbnail" alt="Image description" />
+            </a>
+        </figure> 
+        
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="./assets/images/gallery_main/1.png" itemprop="contentUrl" data-size="1920x1080">
+                <img src="./assets/images/gallery_main/1.png" itemprop="thumbnail" alt="Image description" />
+            </a>
+        </figure>
+    
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="./assets/images/gallery_main/2.png" itemprop="contentUrl" data-size="1920x1080">
+                <img src="./assets/images/gallery_main/2.png" itemprop="thumbnail" alt="Image description" />
+            </a>
+        </figure>
+        
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="./assets/images/gallery_main/3.png" itemprop="contentUrl" data-size="1920x1080">
+                <img src="./assets/images/gallery_main/3.png" itemprop="thumbnail" alt="Image description" />
+            </a>
+        </figure> 
+    </div>-->
 
     <!--
         <div class="row">
@@ -55,7 +103,7 @@ robot_tags:
         <hr class="line-splitter">
     -->
 
-    <div class="container">
+    <!-- <div class="container">
         <div id="gallery_slideshow" class="camera_wrap">
             <div data-src="assets/images/gallery_main/1.png"></div>
             <div data-src="assets/images/gallery_main/2.png"></div>
@@ -70,11 +118,11 @@ robot_tags:
                 invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
                 dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
-    </div>
+    </div> -->
 
-    <hr class="line-splitter">
+    <!-- <hr class="line-splitter">
 
-    <h1><a href="kontakt.html"><i>Kontakt aufnehmen</i></a></h1>
+    <h1><a href="kontakt.html"><i>Kontakt aufnehmen</i></a></h1> -->
 
     <!--
     <div class="row">
@@ -97,3 +145,4 @@ robot_tags:
     <hr class="line-splitter">-->
 
 </div>
+

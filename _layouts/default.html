@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/camera.css" />
 
+    <link rel="stylesheet" href="css/bootstrap-theme-modified.css" />
+    
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i|Roboto+Slab:100,300,400,700" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha256-kQW7k22C0skJMSPxgEI2VHR0LPHeygi8SRYNvV/DB2w=" crossorigin="anonymous" />
@@ -54,13 +56,11 @@
                         <ul class="dropdown-menu">
                         </ul>
                     </li>-->
-                    <li><a href="location.html">Location</a></li>
-                    <li><a href="gitarrenunterricht.html">Gitarrenunterricht</a></li>
-                    <li><a href="technik.html">Technik</a></li>
-                    <li><a href="person.html">Zur Person</a></li>
-                    <!--<li><a href="sounds.html">Hörprobe</a></li>-->
-                    <li><a href="kosten.html#">Kosten</a></li>
-                    <li><a href="kontakt.html#">Kontakt</a></li>
+                    {% for hash in site.data.pages %}
+                        {% assign pageentry = hash[1] %}
+                        
+                        <li><a href="#{{hash[0]}}">{{pageentry.title}}</a></li>
+                    {% endfor %}
                 </ul>
                 <!--<ul class="nav navbar-nav navbar-right">
                     <li class="tag_tel"></li>
@@ -74,16 +74,16 @@
         {{ content }}
     </article>
 
-    <div style="height:80px"></div>
+    <!-- <div style="height:80px"></div> -->
 
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <a href="impressum.html#">Impressum & Datenschutzerklärung</a>
+                    <a href="impressum.html">Impressum & Datenschutzerklärung</a>
                 </div>
                 <div class="col-md-4">
-                    ©2018 Bernhard Welling
+                    ©2019 Bernhard Welling
                 </div>
                 <div class="col-md-4">
                     Made by: <a target="_blank" href="http://kay-gonschior.de">kay-gonschior.de</a>
@@ -92,6 +92,73 @@
         </div>
     </footer>
 
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+            It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -99,6 +166,7 @@
     <script type="text/javascript" src="js/camera.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha256-iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha256-XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/photoswipeGalleryInitialization.js"></script>
     <script type="text/javascript" src="js/pagescript.js"></script>
     
     <script async defer
