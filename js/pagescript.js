@@ -4,7 +4,22 @@ $( document ).ready(function() {
     resizeMainBanner();
     window.onresize = resizeMainBanner;
     
-    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').popover({container: 'body'});
+
+    $('body').scrollspy({ target: '#thenavbar' })
+
+    $(document).on('click', 'a[href^="#"]:not(a[href^="#_"])', function (event) {
+        event.preventDefault();
+    
+        // bootstrap navbar
+        $('#bs-example-navbar-collapse-1').collapse("hide");
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 800);
+
+        //window.location.hash = $.attr(this, 'href');
+    });
 
     /*jQuery('#gallery_slideshow').camera({
         fx: 'scrollHorz',

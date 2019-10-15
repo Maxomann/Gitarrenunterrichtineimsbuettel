@@ -15,6 +15,8 @@ body{
     font-family: 'Roboto Slab', serif;
 
     overflow-x: hidden;
+
+    position: relative;
 }
 h1{
     font-family: 'Cabin', sans-serif;
@@ -73,12 +75,18 @@ footer{
     height: 144px;
 }
 
-.stdimg{
+.smallimg {
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.stdimg {
     width: 600px;
     max-width: 100%;
     max-height: 100%;
 }
-.bigimg{
+.bigimg {
     width: 800px;
     max-width: 100%;
     max-height: 100%;
@@ -102,8 +110,14 @@ footer{
 }
 
 .line-splitter{
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+@media (min-width: 768px){
+    .line-splitter{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
 }
 
 .full_width{
@@ -123,6 +137,14 @@ footer{
     text-align: center;
 }
 
+#start{
+    margin-bottom: 60px;
+}
+@media (min-width: 768px){
+    #start{
+        margin-bottom: 100px;
+    }
+}
 .jumbotron{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -130,7 +152,7 @@ footer{
       ),url("../assets/images/location/3.png");
     background-position: center;
     background-size: cover;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     color: white;
 
     /*text-shadow: 0px 0px 8px #333333;*/
@@ -138,6 +160,11 @@ footer{
     text-align: center;
     /*background-color: rgba(219, 205, 0, 1);
     background-blend-mode: hard-light;*/
+}
+@media (min-width: 768px){
+    .jumbotron{
+        margin-bottom: 100px;
+    }
 }
 .jumbotron h1{
     font-family: 'Cabin', sans-serif;
@@ -153,6 +180,9 @@ footer{
 .jumbotron h2{
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
+}
+#jumbotron-main {
+    margin-bottom: 0;
 }
 #jumbotron-main-inner {
     transform: translateY(80px);
@@ -317,4 +347,8 @@ a.anchor {
     .unterricht-schwerpunkte a{
         margin-bottom: 0;
     }
+}
+
+.contact_options>div>div>div {
+    font-size: 1.4em;
 }
