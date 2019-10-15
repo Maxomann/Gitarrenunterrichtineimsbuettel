@@ -8,7 +8,7 @@ $( document ).ready(function() {
 
     $('body').scrollspy({ target: '#thenavbar' })
 
-    $(document).on('click', 'a[href^="#"]', function (event) {
+    $(document).on('click', 'a[href^="#"]:not(a[href^="#_"])', function (event) {
         event.preventDefault();
     
         $('html, body').animate({
