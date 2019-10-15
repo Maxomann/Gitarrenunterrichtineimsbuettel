@@ -15,7 +15,8 @@ body{
     font-family: 'Roboto Slab', serif;
 
     overflow-x: hidden;
-    
+
+    position: relative;
 }
 h1{
     font-family: 'Cabin', sans-serif;
@@ -327,4 +328,8 @@ a.anchor {
     .unterricht-schwerpunkte a{
         margin-bottom: 0;
     }
+}
+
+.contact_options>div>div>div {
+    font-size: 1.4em;
 }

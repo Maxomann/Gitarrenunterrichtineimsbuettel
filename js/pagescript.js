@@ -6,6 +6,16 @@ $( document ).ready(function() {
     
     $('[data-toggle="popover"]').popover({container: 'body'});
 
+    $('body').scrollspy({ target: '#thenavbar' })
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 800);
+    });
+
     /*jQuery('#gallery_slideshow').camera({
         fx: 'scrollHorz',
         pagination: false,
