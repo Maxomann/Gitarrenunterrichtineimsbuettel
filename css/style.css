@@ -110,8 +110,14 @@ footer{
 }
 
 .line-splitter{
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+@media (min-width: 768px){
+    .line-splitter{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
 }
 
 .full_width{
@@ -131,6 +137,14 @@ footer{
     text-align: center;
 }
 
+#start{
+    margin-bottom: 60px;
+}
+@media (min-width: 768px){
+    #start{
+        margin-bottom: 100px;
+    }
+}
 .jumbotron{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
@@ -138,7 +152,7 @@ footer{
       ),url("../assets/images/location/3.png");
     background-position: center;
     background-size: cover;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     color: white;
 
     /*text-shadow: 0px 0px 8px #333333;*/
@@ -146,6 +160,11 @@ footer{
     text-align: center;
     /*background-color: rgba(219, 205, 0, 1);
     background-blend-mode: hard-light;*/
+}
+@media (min-width: 768px){
+    .jumbotron{
+        margin-bottom: 100px;
+    }
 }
 .jumbotron h1{
     font-family: 'Cabin', sans-serif;
