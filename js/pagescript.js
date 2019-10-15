@@ -4,7 +4,7 @@ $( document ).ready(function() {
     resizeMainBanner();
     window.onresize = resizeMainBanner;
     
-    $('[data-toggle="popover"]').popover();
+    $('[data-toggle="popover"]').popover({container: 'body'});
 
     /*jQuery('#gallery_slideshow').camera({
         fx: 'scrollHorz',

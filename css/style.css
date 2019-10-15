@@ -15,6 +15,7 @@ body{
     font-family: 'Roboto Slab', serif;
 
     overflow-x: hidden;
+    
 }
 h1{
     font-family: 'Cabin', sans-serif;
@@ -73,12 +74,18 @@ footer{
     height: 144px;
 }
 
-.stdimg{
+.smallimg {
+    width: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.stdimg {
     width: 600px;
     max-width: 100%;
     max-height: 100%;
 }
-.bigimg{
+.bigimg {
     width: 800px;
     max-width: 100%;
     max-height: 100%;
@@ -153,6 +160,9 @@ footer{
 .jumbotron h2{
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
+}
+#jumbotron-main {
+    margin-bottom: 0;
 }
 #jumbotron-main-inner {
     transform: translateY(80px);
