@@ -160,13 +160,13 @@ footer{
         margin-bottom: 100px;
     }
 }
-.jumbotron h1{
+.jumbotron h2{
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
     font-size: 10vw;
 }
 @media (min-width: 768px){
-    .jumbotron h1{
+    .jumbotron h2{
         font-size: 70px;
     }
 }
