@@ -317,6 +317,10 @@ a.anchor {
     visibility: hidden;
 }
 
+.unterricht-schwerpunkte {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .unterricht-schwerpunkte h3 {
     height: auto;
 }
