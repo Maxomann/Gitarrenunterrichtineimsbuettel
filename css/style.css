@@ -21,6 +21,15 @@ body{
 h1{
     font-family: 'Cabin', sans-serif;
     font-weight: 500;
+    /*line-height: 56px;*/
+}
+h1 > div {
+    margin: 20px 0 10px;
+}
+h1.with-subheading > div:nth-child(2) {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
 }
 h2{
     font-family: 'Cabin', sans-serif;
