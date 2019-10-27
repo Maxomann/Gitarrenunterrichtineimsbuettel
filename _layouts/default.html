@@ -15,7 +15,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/camera.css" />
 
     <link rel="stylesheet" href="css/bootstrap-theme-modified.css" />
@@ -32,6 +32,8 @@
 </head>
 
 <body>
+    {% include modals.html %}
+
     <nav id="thenavbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -51,12 +53,6 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!--<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mehr Erfahren&nbsp;<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                        </ul>
-                    </li>-->
-
                     <li><a href="#start">Start</a></li>
 
                     {% for hash in site.data.pages %}
@@ -163,7 +159,7 @@
     </div>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
     <script type="text/javascript" src="js/camera.js"></script>
