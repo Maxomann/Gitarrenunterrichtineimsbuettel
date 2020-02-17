@@ -6,7 +6,13 @@ $( document ).ready(function() {
     
     $('[data-toggle="popover"]').popover({container: 'body'});
 
-    $('body').scrollspy({ target: '#thenavbar' })
+    $('body').scrollspy({ target: '#thenavbar' }).on('activate.bs.scrollspy', function (a) {
+        var subpageName = a.target.children[0].href.split('#')[1];
+
+        _paq.push(['setCustomUrl', '/' + subpageName]);
+        //_paq.push(['setDocumentTitle', 'My New Title']);
+        _paq.push(['trackPageView']);
+      })
 
     $(document).on('click', 'a[href^="#"]:not(a[href^="#_"])', function (event) {
         event.preventDefault();
