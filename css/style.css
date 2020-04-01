@@ -344,3 +344,16 @@ a.anchor {
 .contact_options>div>div>div {
     font-size: 1.4em;
 }
+
+#covid_info {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    width: 90%;
+    max-width: 800px;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    background-color: #FF3333;
+    color: white;
+}
