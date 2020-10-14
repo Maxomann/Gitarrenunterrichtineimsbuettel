@@ -5,3 +5,16 @@ pagespeed insights
 lighthouse rating
 
 impressum zurück zur hauptseite
+
+--------------------------------------------
+
+- nicht sichtbare Bilder aufschieben
+
+- Ressourcen beseitigen, die das Rendering blockieren
+
+- CSS komprimieren
+
+(- Defer non-critical CSS?)
+
+- Darauf achten, dass der Text während der Webfont-Ladevorgänge sichtbar bleibt
+
